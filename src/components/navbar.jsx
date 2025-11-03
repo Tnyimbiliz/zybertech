@@ -1,7 +1,6 @@
 import { useState } from "react";
 import loneLogo from "../assets/lone_logo.png"; // adjust the path as needed
 
-
 function Logo() {
   return (
     <div className="flex items-center gap-2">
@@ -34,9 +33,12 @@ export default function Navbar() {
           <div className="flex items-center justify-between">
             <Logo />
             <div className="hidden md:flex items-center gap-8">
-              {links.map(l => (
-                <a key={l.href} href={l.href}
-                   className="text-sm text-zinc-300 hover:text-white transition">
+              {links.map((l) => (
+                <a
+                  key={l.href}
+                  href={l.href}
+                  className="text-sm text-zinc-300 hover:text-white transition"
+                >
                   {l.label}
                 </a>
               ))}
@@ -49,11 +51,15 @@ export default function Navbar() {
             </div>
             <button
               className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-xl glass"
-              onClick={() => setOpen(v => !v)}
+              onClick={() => setOpen((v) => !v)}
               aria-label="Toggle menu"
             >
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                <path d="M4 7h16M4 12h16M4 17h16" stroke="white" strokeWidth="2" />
+                <path
+                  d="M4 7h16M4 12h16M4 17h16"
+                  stroke="white"
+                  strokeWidth="2"
+                />
               </svg>
             </button>
           </div>
@@ -62,16 +68,25 @@ export default function Navbar() {
           {open && (
             <div className="md:hidden mt-3 border-t border-white/10 pt-3">
               <div className="flex flex-col gap-2">
-                {links.map(l => (
-                  <a key={l.href} href={l.href}
-                     className="rounded-xl px-3 py-2 hover:bg-white/5"
-                     onClick={() => setOpen(false)}>
+                {links.map((l) => (
+                  <a
+                    key={l.href}
+                    href={l.href}
+                    className="rounded-xl px-3 py-2 hover:bg-white/5"
+                    onClick={() => setOpen(false)}
+                  >
                     {l.label}
                   </a>
                 ))}
+
+                {/* Start a Project — same styling as desktop/CTA */}
                 <a
                   href="#contact"
-                  className="rounded-xl px-3 py-2 bg-gradient-to-r from-zyber-primary to-zyber-secondary text-black text-center font-medium"
+                  className="rounded-2xl px-5 py-3 font-medium text-white
+                   bg-gradient-to-r from-[#6EE7F9] to-[#A78BFA]
+                   hover:shadow-[0_0_40px_rgba(167,139,250,0.25)]
+                   border border-white/15 hover:border-white/30
+                   transition text-center block w-full"
                   onClick={() => setOpen(false)}
                 >
                   Start a Project
