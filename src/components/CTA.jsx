@@ -55,7 +55,7 @@ export default function CTA() {
             </form>
 
             <p id="about" className="mt-6 text-sm text-zinc-400">
-              Zyber Technology — building for ourselves and for clients worldwide.
+              Zyber Technology Limited — building for ourselves and for clients worldwide.
             </p>
           </div>
         </div>

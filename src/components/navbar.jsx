@@ -13,7 +13,7 @@ function Logo() {
         height={40}
       />
       <span className="font-semibold tracking-tight text-lg">
-        Zyber <span className="text-zyber-primary">Technology</span>
+        Zyber <span className="text-zyber-primary">Technology Limited</span>
       </span>
     </div>
   );

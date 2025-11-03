@@ -22,7 +22,7 @@ export default function Hero() {
                 </span>
               </h1>
               <p className="mt-4 text-zinc-300 max-w-2xl">
-                Zyber Technology builds world-class web, app & software
+                Zyber Technology Limited builds world-class web, app & software
                 solutions — for our own product line and for clients who want
                 performance, reliability, and style.
               </p>
